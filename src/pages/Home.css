@@ -336,6 +336,7 @@
   color: var(--gray-900);
 }
 
+.btn-animated__svg-right {
   position: absolute;
   top: 0;
   right: 0;
