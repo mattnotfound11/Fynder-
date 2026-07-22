@@ -11,22 +11,22 @@ export default function Navbar() {
 
         <ul className="navbar__links" id="nav-links">
           <li>
-            <NavLink to="/" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'} end id="nav-home">
+            <NavLink to="/" className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`} end id="nav-home">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/search" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'} id="nav-search">
+            <NavLink to="/search" className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`} id="nav-search">
               Search
             </NavLink>
           </li>
           <li>
-            <NavLink to="/report" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'} id="nav-report">
+            <NavLink to="/report" className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`} id="nav-report">
               Report
             </NavLink>
           </li>
           <li>
-            <NavLink to="/claims" className={({ isActive }) => isActive ? 'navbar__link navbar__link--active' : 'navbar__link'} id="nav-claims">
+            <NavLink to="/claims" className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`} id="nav-claims">
               My Claims
             </NavLink>
           </li>
